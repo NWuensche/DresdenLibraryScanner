@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">DresdenBibliothekBarcodeScanner</string>
+    <string name="app_name">BookScanner</string>
+    <string name="action_settings">Add Städtische Bibliotheken Dresden</string>
 </resources>
