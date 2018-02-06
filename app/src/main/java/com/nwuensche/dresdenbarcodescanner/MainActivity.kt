@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity
 import android.util.SparseArray
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
 import com.google.android.gms.samples.vision.barcodereader.BarcodeCapture
 import com.google.android.gms.samples.vision.barcodereader.BarcodeGraphic
 import com.google.android.gms.vision.barcode.Barcode
@@ -29,6 +30,8 @@ class MainActivity : AppCompatActivity(), BarcodeRetriever {
 
         val barcodeCapture = supportFragmentManager.findFragmentById(R.id.barcode) as BarcodeCapture
         barcodeCapture.setRetrieval(this)
+        this.window.decorView.systemUiVisibility =  View.SYSTEM_UI_FLAG_FULLSCREEN
+
 
         val settings = getSharedPreferences(PREFS_NAME, 0)
         showSBD = settings.getBoolean("showSBD", false)
