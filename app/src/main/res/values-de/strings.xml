@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Buch Scanner</string>
+    <string name="action_settings">Nutze auch  Städtische Bibliotheken Dresden</string>
+    <string name="dialog_title">Welchen Katalog öffnen?</string>
+</resources>

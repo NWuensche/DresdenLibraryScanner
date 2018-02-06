@@ -1,4 +1,5 @@
 <resources>
-    <string name="app_name">BookScanner</string>
-    <string name="action_settings">Add Städtische Bibliotheken Dresden</string>
+    <string name="app_name">Book Scanner</string>
+    <string name="action_settings">Add Städtische Bibliotheken</string>
+    <string name="dialog_title">Open Which Catalog?</string>
 </resources>

@@ -40,8 +40,8 @@ class MainActivity : AppCompatActivity(), BarcodeRetriever {
     override fun onPermissionRequestDenied() {
         runOnUiThread {
             val builder = AlertDialog.Builder(this@MainActivity)
-                    .setTitle("Keine Berechtigung")
-                    .setMessage("Keine Berechtigung")
+                    .setTitle("No Permission")
+                    .setMessage("No Permission")
             builder.show()
         }
     }
@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity(), BarcodeRetriever {
 
             runOnUiThread {
                 alert {
-                    title = "Zeige welchen Katalog?" //TODO Englisch
+                    title = getString(R.string.dialog_title) //TODO Englisch
 
                     val browserIntentSBD = Intent(Intent.ACTION_VIEW, Uri.parse("https://katalog.bibo-dresden.de/webOPACClient/search.do;jsessionid=00B02B30080C6775EE8C6DB6611D6677?methodToCall=submit&CSId=3866N36S25e4c62c628253101d89b9456b5d25930d1c392d&methodToCallParameter=submitSearch&searchCategories%5B0%5D=-1&searchString%5B0%5D=${p0!!.displayValue}&callingPage=searchParameters&selectedViewBranchlib=0&selectedSearchBranchlib=&searchRestrictionID%5B0%5D=8&searchRestrictionValue1%5B0%5D=&searchRestrictionID%5B1%5D=6&searchRestrictionValue1%5B1%5D=&searchRestrictionID%5B2%5D=3&searchRestrictionValue1%5B2%5D=&searchRestrictionValue2%5B2%5D="))
                     positiveButton("SLUB") { startActivity(browserIntentSLUB) }
